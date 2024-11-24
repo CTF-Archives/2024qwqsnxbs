@@ -124,9 +124,9 @@ You came across a strange piece of front-end code. A seemingly simple button alw
 
 "Separate the wheat from the chaff"
 
-**[环境下载](ezFindShell.zip)**
-
 **动态环境**
+
+**[环境下载](ezFindShell.zip)**
 
 ### cyberboard
 
@@ -141,3 +141,5 @@ simple cyber messageboard,admin can leave the message
 mysql probe,you can connect to your mysql
 
 **动态环境**
+
+**[环境下载](mysqlprobe.php)**
