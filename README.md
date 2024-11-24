@@ -9,6 +9,8 @@
 
 **动态环境**
 
+**[环境下载](签到漫画.zip)**
+
 ### whitepic
 
 Is there really nothing at all?
@@ -88,6 +90,8 @@ Record your journey, leave your story.
 You came across a strange piece of front-end code. A seemingly simple button always fails to return what you're looking for. Every time you click the button, the server responds with: "Good job for trying, but unfortunately...".
 
 **动态环境**
+
+**[环境下载](ezGetFlag.zip)**
 
 ### ezFindShell
 
